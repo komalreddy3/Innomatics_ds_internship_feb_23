@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcydTS7b4cTcrwZjtW4aaW65A2LxaUb8Fdsg&usqp=CAU">
+        <h1>{% block title %} URL Shortener Statistics {% endblock %}</h1>
+    <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">S.NO</th>
+            <th scope="col">Short_URL</th>
+            <th scope="col">Original_URL</th>
+            <th scope="col">Clicks</th>
+            <th scope="col">Creation Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for url in urls %}
+                <tr>
+                    <th scope="row">{{ url['id'] }}</th>
+                    <td>{{ url['short_url'] }}</td>
+                    <td>{{ url['original_url'] }}</td>
+                    <td>{{ url['clicks'] }}</td>
+                    <td>{{ url['created'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </body>
+
+{% endblock %}
