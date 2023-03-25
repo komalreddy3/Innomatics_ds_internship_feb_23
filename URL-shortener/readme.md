@@ -7,7 +7,7 @@
 ## Why do we need a URL Shortener?
 Sometimes we need to share or send links and this can be tiresome and annoying to copy and paste long URLs. That is where URL shorteners come in. Not only it helps in shortening the URL but it also allows the user to copy the shortened URL with a click of a button.
 
-### The project consists of 2 parts:
+### The project consists of 3 parts:
 1. Frontend (done with HTML, CSS, and Bootstrap)
 2. Backend - Flask (Python)
 3. Backend - Database ORM
